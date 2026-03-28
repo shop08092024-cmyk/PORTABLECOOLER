@@ -40,10 +40,11 @@
     <div class="product-left">
       <div class="badge-hot">HOT DEAL 🔥</div>
       <div class="main-img-wrap">
-        <img id="mainImg" src="main.webp" alt="Mini Air Cooler – 3 Fan Speeds" class="main-img">
+        <img id="mainImg" src="main.webp" alt="Mini Air Cooler – Main" class="main-img">
       </div>
       <div class="thumbnails">
-        <img src="img5.webp" onclick="switchImg(this)" class="thumb active" alt="3 Fan Speeds">
+        <img src="main.webp" onclick="switchImg(this)" class="thumb active" alt="Main Product">
+        <img src="img5.webp" onclick="switchImg(this)" class="thumb" alt="3 Fan Speeds">
         <img src="img6.webp" onclick="switchImg(this)" class="thumb" alt="7-Color LED">
         <img src="img7.webp" onclick="switchImg(this)" class="thumb" alt="3 Wind Speeds 60° Adjustment">
         <img src="img1.webp" onclick="switchImg(this)" class="thumb" alt="Power Supply Options">
@@ -227,6 +228,12 @@
     <p id="modalMsg">Your order has been received. Check your WhatsApp for confirmation!</p>
     <button onclick="closeModal()">Continue Shopping</button>
   </div>
+</div>
+
+<!-- STICKY MOBILE BUY BAR -->
+<div class="mobile-sticky-bar" id="mobileStickyBar">
+  <button class="sticky-cod" onclick="document.querySelector('.cta-buttons').scrollIntoView({behavior:'smooth'});setTimeout(cashOnDelivery,600)">📦 COD</button>
+  <button class="sticky-pay" onclick="document.querySelector('.cta-buttons').scrollIntoView({behavior:'smooth'});setTimeout(payOnline,600)">💳 Pay Online ₹699</button>
 </div>
 
 <script src="script.js"></script>
